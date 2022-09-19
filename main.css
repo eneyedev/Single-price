@@ -1,0 +1,132 @@
+* {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  font-family: "Montserrat", sans-serif;
+  background: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  place-content: center;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+  color: white;
+}
+
+.h1 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.p3 {
+  color: var(--light-gray);
+  font-size: 20px;
+}
+
+.join-community {
+  background: white;
+  padding: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.text {
+  width: 88%;
+  margin: auto;
+}
+
+.join-community .h1 {
+  color: var(--cyan);
+}
+
+.join-community .p1 {
+  color: var(--bright-yellow);
+}
+
+.join-community .p2 {
+  color: var(--grayish-blue);
+  line-height: 2;
+}
+
+.subscription {
+  background: var(--cyan);
+  padding: 1rem;
+}
+
+.subscription .text p:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.subscription .text p:nth-child(2) span:nth-child(2) {
+  color: var(--light-gray);
+}
+
+.btn {
+  background: var(--bright-yellow);
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+.why-us {
+  padding: 1rem;
+  background: hsl(179, 62%, 43%, 0.6);
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.why-us .text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--light-gray);
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    width: 90%;
+    max-width: 50%;
+  }
+
+  .flex {
+    display: flex;
+    width: 100%;
+  }
+
+  .why-us {
+    border-bottom-left-radius: 0;
+  }
+
+  .subscription {
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .why-us,
+  .subscription {
+    width: 100%;
+  }
+}
